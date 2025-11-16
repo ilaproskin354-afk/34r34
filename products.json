@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "title": "Диван Сканди",
+    "price": 25990,
+    "img": "images/sofa1.jpg",
+    "enabled": true
+  },
+  {
+    "id": "p2",
+    "title": "Кресло Лофт",
+    "price": 8990,
+    "img": "images/chair1.jpg",
+    "enabled": true
+  },
+  {
+    "id": "p3",
+    "title": "Стол Март",
+    "price": 14990,
+    "img": "images/table1.jpg",
+    "enabled": true
+  }
+]

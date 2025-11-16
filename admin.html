@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — WOODLINE</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="brand">WOODLINE — Admin</div><nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a></nav></header>
+<main class="container admin-wrap">
+  <h1>Панель администратора</h1>
+  <div id="loginBox" class="card">
+    <h3>Вход администратора</h3>
+    <div class="row"><input id="user" placeholder="Логин"></div>
+    <div class="row"><input id="pass" placeholder="Пароль" type="password"></div>
+    <div class="row"><button id="btnLogin" class="btn">Войти</button></div>
+    <hr>
+    <h4>Или введите секретный код</h4>
+    <div class="row"><input id="secret" placeholder="Секретный код"></div>
+    <div class="row"><button id="btnSecret" class="btn ghost">Подтвердить код</button></div>
+    <p class="small">Также можно открыть админку через URL: <code>admin.html?key=12345</code></p>
+  </div>
+
+  <div id="adminArea" class="card hidden">
+    <div class="admin-controls">
+      <button id="btnNew" class="btn">+ Добавить товар</button>
+      <button id="btnExport" class="btn ghost">Экспорт JSON</button>
+      <input id="importFile" type="file" accept=".json">
+      <button id="btnLogout" class="btn ghost" style="float:right">Выйти</button>
+    </div>
+    <div id="productList"></div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body></html>
